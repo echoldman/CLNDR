@@ -171,6 +171,14 @@ p {
 .cal1 .clndr .clndr-table tr .day.my-event:hover {
   background: #96d478;
 }
+.cal1 .clndr .clndr-table tr .day.holiday,
+.cal1 .clndr .clndr-table tr .day.my-holiday {
+  background: #9870CA;
+}
+.cal1 .clndr .clndr-table tr .day.holiday:hover,
+.cal1 .clndr .clndr-table tr .day.my-holiday:hover {
+  background: #9D7CFD;
+}
 .cal1 .clndr .clndr-table tr .day.inactive,
 .cal1 .clndr .clndr-table tr .day.my-inactive {
   background: #ddd;

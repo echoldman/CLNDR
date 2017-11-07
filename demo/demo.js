@@ -25,6 +25,10 @@ $(document).ready( function() {
         }, {
             date: thisMonth + '-27',
             title: 'Single Day Event'
+        }, {
+            date: '2017-11-17',
+            title: 'on',
+            type: 'holiday'
         }
     ];
 

@@ -160,6 +160,7 @@
             previousYear: true
         };
 
+
         // If there are events, we should run them through our
         // addMomentObjectToEvents function which will add a date object that
         // we can use to make life easier. This is only necessarywhen events
@@ -618,7 +619,12 @@
         }
 
         if (eventsToday.length) {
-            extraClasses += (" " + this.options.classes.event);
+            var type = eventsToday[0]['type'];
+            if (type) {
+                extraClasses += " " + type;
+            } else {
+                extraClasses += (" " + this.options.classes.event);
+            }
         }
 
         if (!this.options.lengthOfTime.days) {
